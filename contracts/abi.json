@@ -1,0 +1,741 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "characterId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "strength",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "armorPower",
+				"type": "uint256"
+			}
+		],
+		"name": "addCharacter",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gunId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rateOfFire",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gunRange",
+				"type": "uint256"
+			}
+		],
+		"name": "addGun",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "vehicleId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vehicleRange",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speed",
+				"type": "uint256"
+			}
+		],
+		"name": "addVehicle",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "assetId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum BlockBattle.AssetType",
+				"name": "assetType",
+				"type": "uint8"
+			}
+		],
+		"name": "buyAsset",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "characters",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "strength",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "armorPower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rateOfFire",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "range",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum BlockBattle.AssetType",
+				"name": "assetType",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "winner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "highestKills",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			}
+		],
+		"name": "endGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "games",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "winner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "highestKills",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getPlayerAssets",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imageHash",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "strength",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "armorPower",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rateOfFire",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "range",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "speed",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum BlockBattle.AssetType",
+						"name": "assetType",
+						"type": "uint8"
+					}
+				],
+				"internalType": "struct BlockBattle.Asset[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getPlayerData",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "coins",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "diamonds",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "walletAddress",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "imageHash",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "strength",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "armorPower",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "rateOfFire",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "range",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "speed",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum BlockBattle.AssetType",
+								"name": "assetType",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct BlockBattle.Asset[]",
+						"name": "ownedAssets",
+						"type": "tuple[]"
+					}
+				],
+				"internalType": "struct BlockBattle.Player",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getPlayerNFTs",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "imageHash",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "playerRoomId",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct BlockBattle.NFT[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "guns",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "strength",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "armorPower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rateOfFire",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "range",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum BlockBattle.AssetType",
+				"name": "assetType",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			}
+		],
+		"name": "isPlayerRegistered",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "kills",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "playerNFTs",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "playerRoomId",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "players",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "coins",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "diamonds",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "walletAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "playerName",
+				"type": "string"
+			}
+		],
+		"name": "registerPlayer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "gamePlayers",
+				"type": "address[]"
+			}
+		],
+		"name": "startGame",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "playerAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "newName",
+				"type": "string"
+			}
+		],
+		"name": "updatePlayerProfile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "vehicles",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageHash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "strength",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "armorPower",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rateOfFire",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "range",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "speed",
+				"type": "uint256"
+			},
+			{
+				"internalType": "enum BlockBattle.AssetType",
+				"name": "assetType",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

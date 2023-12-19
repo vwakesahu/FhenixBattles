@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+.root2 {
+  width: 60vw;
+  height: 82vh;
+}
+
+body {
+  margin: 0;
+}
+
+
+.herobtn{
+  border-radius: 100px;
+border: 0.8px solid #FFF;
+background: #719C0C;
+box-shadow: 4px 4px 8.3px 1px rgba(255, 255, 255, 0.57) inset;
+}
+
+
+.text-bg{
+  box-shadow: -5.605757713317871px 5.605757713317871px 3.0184848308563232px 0px #00000080;
+
+box-shadow: -1.7248485088348389px 1.810164451599121px 3.4496970176696777px 0px #B9FF234D;
+
+}
+
+.homeprofilebg{
+  background: rgba(13, 13, 13, 0.74);
+  border-radius: 13px;
+border: 1px solid #9FC610;
+background: rgba(13, 13, 13, 0.74);
+
+}
+
+.homebox{
+  border-radius: 20px;
+border: 1px solid rgba(159, 198, 16, 0.26);
+background: rgba(13, 13, 13, 0.74);
+}
+
+.mapbox{
+  border-radius: 6.25px;
+border: 1.25px solid #9FC610;
+background: rgba(0, 0, 0, 0.69);
+}
+
+.playbtm{
+  border-radius: 10px;
+background: #9FC610;
+box-shadow: 0px 0px 26.6px 9px rgba(20, 20, 21, 0.39) inset;
+}
+
+.herotext{
+  color: #C5F404;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Handjet';
+
+font-size: 262.622px;
+font-style: normal;
+font-weight: 600;
+line-height: 242.622px; /* 100% */
+letter-spacing: 4.293px;
+text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  .herotext{
+    font-size: 62.622px;
+  }
+}
+
+.fontpop{
+  font-family: 'Poppins';
+}
+
+.herobtn2{
+  border-radius: 164.565px;
+border: 0.919px solid rgba(185, 255, 35, 0.95);
+background: #000;
+}
+
+.glow1{
+  width: 87.014px;
+height: 293.875px;
+flex-shrink: 0;
+}
+
+.glow2{
+  width: 82.909px;
+  height: 293.875px;
+  flex-shrink: 0;
+}
+
+.glow3{
+  width: 139.547px;
+  height: 300.442px;
+  flex-shrink: 0;
+}
