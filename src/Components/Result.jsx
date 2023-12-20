@@ -226,7 +226,7 @@ const Result = () => {
         <div className=" bg-[#101010]  text-white min-h-screen z-96 l-wrapper">
           <div className="c-header">
             <button className="c-button c-button--primary">
-              <a href="lobby">Lobby</a>
+              <a href="/lobby">Lobby</a>
             </button>
           </div>
           <div className="l-grid">

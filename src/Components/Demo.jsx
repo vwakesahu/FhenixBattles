@@ -4,15 +4,12 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { SlBadge } from "react-icons/sl";
 import { IoIosArrowBack } from "react-icons/io";
-import { SiVault } from "react-icons/si";
 import { IoIosArrowForward } from "react-icons/io";
-import { MdOutlineLocalGroceryStore } from "react-icons/md";
 import { getPlayerData } from "../config/BlockchainServices";
 import { useAccount } from "wagmi";
 
-function Lobby() {
+function Demo() {
   const map_path = [
     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5za99DFm0qQWqXIYXTyUqxErRkpno3XOGmzDiV7KJstjomtrQZlZh-Knce9FpOIgpYEN8VhitJR3wsU-UktSirP0jhrViNRbBQehjg1lWLLtgdVtznfXCGmAvdGDqLv9KKoQTUePrr3NHviYu8bdCAnh25mpa14d3LRcc32AbSvC2QHU-R0AQRNim0o/s1600/untitled.png",
     "https://blogger.googleusercontent.com/img/a/AVvXsEgHxU-HB-lQ9ifrEy-ymcHR6aeTkwzBaOsIQ6SXinjXyVVmqCbtY44ZraIGYM86B6DT7vk3jDrQSbdJn61D6jZB3HX3aRSc7EIYnSStvJmZefxCOpcKRZVFqha7jg0dd4i-0qZN-87FqviZbUY3oODu3bvJZK9ytVKnLRYcgFpo9hz4JzK25BmQS5c9TMI",
@@ -58,7 +55,7 @@ function Lobby() {
     getplayere();
   }, [address]);
 
-  const map_names = ["Open Field", "Open Field", "Upcoming"];
+  const map_names = ["pochinki", "pochinki", "Israel"];
   const updateData = async () => {
     console.log({
       map: localStorage.getItem("map"),
@@ -90,7 +87,7 @@ function Lobby() {
     <>
       <div className="bg-[url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirjJLoWEUvGMj-1QzqceVDKwtgwjQcIU-QIOp0QIBfaUCSA8QJxGSJa0LU7fZcVdRMgmI7qUcDx-Q-i1JVawfLYBto1yq5oUcqTDGAs2ZLUDttNavphNMCKq58GNlAAPf6vYlejNGBazflG2wUo-5O7MRwX4EUFzfQDu2WfVcdagTGQ2c7n9EEk9VnT-0/s1600/a.jpg')] min-h-screen  bg-no-repeat bg-cover">
         <div className="flex items-center space-x-11 text-white text-xl mx-20 py-8">
-          <div className="flex backdrop-blur-md rounded-lg border  px-3 py-2 items-center space-x-3">
+          <div className="flex homeprofilebg px-3 py-2 items-center space-x-3">
             <img
               src="https://blogger.googleusercontent.com/img/a/AVvXsEilxD0f-Y5qYnr3AA8xT_tvMlR7ru7Yl1zxozlEzg-C5oJqOStwAR8OxsgItoWC112TQTgCt4_xylJDmr4v_Z_A3MDUy22L6CAI_Cvw_FnicYCcoXScwCt41T-xiWNZ8JQJyfbXNdygsgY9TxXvH-Yqdg0vqpeMrakh78RxXj5BAT4XwW1a3KsQVhexzog"
               className="h-12 w-auto"
@@ -99,41 +96,53 @@ function Lobby() {
             <p>
               {playerdata[0]} LVL {playerdata[3]?.toString()}
             </p>
-            <div className="flex items-center space-x-2">
-              <img
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEispplhVXS52zWgstszpWTDQTrJ7FpVpnN4YjBilPRJ0hmtf0FGRI1-JoXko1x1mIG4Gi7ADUF3Yl9lu5JlsLRFnGUcPJnJzStlHom3K63Wu2QcL-nsJoMq2V66FcenoK7MbQVn_9vg1_8E1Q25wDoQJb2AGKiq4JGDYyknSKoXzYQFFR8LEhpX-R13ad4"
-                alt=""
-                className="h-8 w-auto"
-              />
-              <p>{playerdata[1]?.toString()}</p>
-            </div>
-            <div className="flex items-center space-x-2">
-              <img
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEie2DZwyszxtLdkqYknRhqV0hDa85fb4knhn16GCCa3HO6AB_BHA19-BnWKl5qzuE8oOJ_WVifNg1FdY05UTucSiz36llzpSqUBjYbOriIDtaQV9iLJe0eMs455RVi3wkImTId7l0BqdOamXFulz7jivdeEiXqlhfItGYU-7iDuUgSBWA1PweMDY341yFM"
-                alt=""
-                className="h-8 w-auto"
-              />
-              <p>{playerdata[2]?.toString()}</p>
-            </div>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEispplhVXS52zWgstszpWTDQTrJ7FpVpnN4YjBilPRJ0hmtf0FGRI1-JoXko1x1mIG4Gi7ADUF3Yl9lu5JlsLRFnGUcPJnJzStlHom3K63Wu2QcL-nsJoMq2V66FcenoK7MbQVn_9vg1_8E1Q25wDoQJb2AGKiq4JGDYyknSKoXzYQFFR8LEhpX-R13ad4"
+              alt=""
+              className="h-8 w-auto"
+            />
+            <p>{playerdata[1]?.toString()}</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEie2DZwyszxtLdkqYknRhqV0hDa85fb4knhn16GCCa3HO6AB_BHA19-BnWKl5qzuE8oOJ_WVifNg1FdY05UTucSiz36llzpSqUBjYbOriIDtaQV9iLJe0eMs455RVi3wkImTId7l0BqdOamXFulz7jivdeEiXqlhfItGYU-7iDuUgSBWA1PweMDY341yFM"
+              alt=""
+              className="h-8 w-auto"
+            />
+            <p>{playerdata[2]?.toString()}</p>
           </div>
         </div>
         <div className="flex  text-white text-2xl font-semibold  justify-between mx-20">
           <div>
-            <div className="border flex flex-col gap-2 rounded-lg backdrop-blur-md mt-20 ">
-              <div className="flex items-center space-x-5 py-2 hover:backdrop-blur-xl hover:border rounded-lg justify-center px-5">
-                <MdOutlineLocalGroceryStore />
+            <div className="homebox mt-20 px-16 py-10">
+              <div className="flex items-center space-x-5">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEhwze50sr7c42qWHWl1ZtWP-h91tRw96mnDxbST2rhMGENwxAH4LRxTWod417CEaB4xQfPVZ-0-kB1XCD2BDn1hwqxTPxNK6Z_Dz8F7Fo8hDjazJX_zXr458VZUPjdzdih1xheqz4yJg7oXTEQizG8q-8vC2B69RhKN4WOO6XS0AvvMhgGSGkq64aSJ3dQ"
+                  alt=""
+                  className="h-8 w-auto"
+                />
                 <p>
                   <Link href="/optstore">Store</Link>
                 </p>
               </div>
-              <div className="flex items-center space-x-5 py-2 hover:backdrop-blur-xl hover:border rounded-lg justify-center px-5">
-                <SlBadge />
+              <div className="flex items-center my-10 space-x-5">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEgn6Znvl2a2HObGhEoqPyeJymSTwEqIxV8f7IIQK3sCnu7oyYtZCkSg4XB-SRkV7NaxN7OVjliWj7gsOcc9VFmULUPaex4K3A1oEWf6wNsLfa8y9CcwLEdA52Dh-Hl2OnevhWJVJlI7CAMUpnWT97KEO42TfPhAxgHi7umyV4vGcVoO_XTnyxpNyJasnPg"
+                  alt=""
+                  className="h-8 w-auto"
+                />
                 <p>
                   <Link href="/optstore">LuckRoyale</Link>
                 </p>
               </div>
-              <div className="flex items-center space-x-5 py-2 hover:backdrop-blur-xl hover:border rounded-lg justify-center px-5">
-                <SiVault />
+              <div className="flex items-center space-x-5">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEj9mP_S5zrE05iA7nZDHHKPCR4xSdtSRPtzr9tu1TMRYbTkG9wNiCq_Ri20Nna07x-B775iuyjcJBplvhELJglNv426Q-hq-SVkXOhxSDrBLoROEbIAxMzxcUSWOaNF5lpgFBf35PUWkcEoyFN-rhZnwh9o4Q8ply2YLZrxTbmzr_zobAF7jEPIIunNH9s"
+                  alt=""
+                  className="h-8 w-auto"
+                />
                 <p>
                   <Link href="/Guns">Vault</Link>
                 </p>
@@ -231,4 +240,4 @@ function Lobby() {
   );
 }
 
-export default Lobby;
+export default Demo;

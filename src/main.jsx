@@ -63,7 +63,9 @@ const wagmiConfig = createConfig({
   connectors,
   publicClient,
 });
+
 import { HuddleClient, HuddleProvider } from "@huddle01/react";
+import Demo from "./Components/Demo";
 
 const huddleClient = new HuddleClient({
   projectId: "64oMGEVTnuPWGxDY-MGTKlLQe7xLje4f",
@@ -86,6 +88,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <WagmiConfig config={wagmiConfig}>
               <RainbowKitProvider chains={chains}>
                 <Routes>
+                  <Route path="/demo" exact element={<Demo />} />
+
                   <Route path="/" exact element={<Home />} />
                   <Route path="/lobby" exact element={<Lobby />} />
                   <Route path="/game" exact element={<App />} />
