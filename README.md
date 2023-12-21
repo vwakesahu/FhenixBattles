@@ -1,82 +1,59 @@
-# BlockBattle: Next-Gen On-Chain Multiplayer Gaming
+# FhenixBattle
+![FhenixBattle](./public/fhenix_battle_banner.jpg)
 
-![Header](https://github.com/vmmuthu31/BlockBattle-Dev/assets/111880621/672b148a-1d4c-4d00-b56e-b85a131aa95b)
+FhenixBattle is an exciting online multiplayer game where players from various regions can join, play, and compete for rewards in the form of NFTs. This game leverages the power of Fhenix, providing a dynamic and engaging gaming experience.
 
-## Overview
+## Highlights
+- **Fhenix Integration:** FhenixBattles utilizes the capabilities of Fhenix, ensuring a secure and seamless gaming environment.
+  
+- **NFT Rewards:** Winners of FhenixBattles are rewarded with unique NFTs, adding a valuable incentive to the competitive gaming experience.
 
-Welcome to BlockBattle, an innovative multiplayer survival shooting game built on blockchain technology. BlockBattle is more than just a game; it's an immersive journey into a future where gaming meets the security and transparency of blockchain.
+## Contract Functions
 
-### Elevate Your Gaming Experience
+### Random Character Spawn with TFHE
+TFHE is integrated to spawn characters at random locations on the map, enhancing the unpredictability and excitement of each game session.
+```solidity
+function _createRandomNum() public returns (euint8) {
+    euint8 randomNum = TFHE.randEuint8();
+    return randomNum;
+}
+```
+## Steps to Play
 
-BlockBattle combines intense PvP action, a strategic gaming environment, and blockchain's reliability. Get ready to dive into a world where every match is a new adventure and every victory brings rewards beyond just bragging rights.
+1. **Login with Fhenix:**
+   - Ensure you have a Fhenix account. Log in to your Fhenix account to access FhenixBattle.
 
-## The Problem it solves 
+2. **Press Play:**
+   - Located at the bottom of the page, the "Play" button initiates your journey into FhenixBattle.
 
-"BlockBattle" utilizes blockchain technology for secure and fair online multiplayer gaming. It enhances social interaction through easy-to-join game rooms and incentivizes players with rewards. This setup ensures transparency in gameplay and security for digital assets, making online gaming safer and more engaging.
+3. **Navigate the Lobby:**
+   - Upon pressing play, you'll be redirected to the lobby. Customize your gaming experience by selecting the timer, choosing a map, and clicking "Play."
 
-## Features
+4. **Invite Friends:**
+   - Before launching into battle, invite your friends to join the gaming session.
 
-### 1. Intense PvP Action
+5. **Launch and Enjoy:**
+   - Click on "Launch" to start the game. Enjoy an immersive multiplayer experience and compete for victory.
 
-Dive into the heart of battle with BlockBattle's diverse character selections. Engage in strategic combat, outsmart your opponents, and climb to the top of the leaderboard in adrenaline-fueled showdowns.
+## Running Locally
 
-### 2. On-Chain Rewards and Achievements
+To run the application in your local environment, follow these steps:
 
-Stand out with your in-game achievements, recorded securely on the blockchain. Earn exclusive rewards and digital assets that reflect your gaming prowess and dedication.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/vwakesahu/FhenixBattles
+```
+2. **Navigate to the project directory:**
+ ```bash
+ cd FhenixBattles
+```
+3. **Install dependencies:**
+ ```bash
+ npm install
+```
+4. **Run the development server:**
+ ```bash
+ npm run dev
+```
 
-### 3. Enhanced Gaming Realism
-
-Experience unparalleled realism with our cutting-edge blockchain integration. Enjoy seamless gameplay, authentic graphics, and a robust gaming environment that blockchain technology enables.
-
-### 4. Timer-Driven Challenges
-
-Test your skills in fast-paced, timer-driven challenges. Each match is a race against time, pushing you to strategize and react swiftly to emerge victorious.
-
-## Tech Stack
-
-- Next.js
-- Solidity (for smart contracts)
-- Ether.js / Web3.js (for blockchain interactions)
-- Tailwind CSS
-- Three.js and Blender for 3D graphics
-- Redux for state management
-- Git for version control
-
-## Future Roadmap
-
-BlockBattle is committed to continually evolving. Our roadmap includes:
-
-### Advanced Analytics and Security Integration
-
-We plan to integrate sophisticated analytics tools and enhance security features to offer an even more robust gaming experience. Stay tuned for updates!
-
-### Bounties
-
-### Celo Deployment 
-
-![Celo_New_Logo_Jan_2023](https://github.com/vmmuthu31/BlockBattle-Dev/assets/111880621/94fde801-4f82-4457-b8cf-49dd67458f5f)
-
-0xaA366318f39E92b479520D83d918DE57a156eB82
-
-### Mantle Deployment 
-
-![image](https://github.com/vmmuthu31/BlockBattle-Dev/assets/111880621/4ae43e36-0ff1-4e9e-80da-4ba97891aefe)
-
-0xa0b0A5f6FF1FE8141F81061cB34B6218F0591C50
-
-### Polygon POS Deployment
-
-![image](https://github.com/vmmuthu31/BlockBattle-Dev/assets/111880621/c8e18a6a-e71c-4b0d-bc23-a83d602bdc8d)
-
-0x4Af1d4bd8417E4b4A2bf9d7dB82c7145a8C03255
-
-### Scroll Deployment
-
-![image](https://github.com/vmmuthu31/BlockBattle-Dev/assets/111880621/5dd74f3e-8c56-4ffa-bc92-cb8b29adc606)
-
-0xD17ce37D70e499681E2C2a5f574DE1020a7a8a1F
-
-###Screenshots
-
-
-
+Now, you're ready to experience FhenixBattle locally on your machine! 
