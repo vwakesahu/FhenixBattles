@@ -1,7 +1,5 @@
 # FhenixBattle
 
-## Project Demo
-
 [![Project Demo](https://img.youtube.com/vi/hvfTCB2xZBA/0.jpg)](https://www.youtube.com/watch?v=hvfTCB2xZBA)
 Check out the project demo on YouTube.
 
