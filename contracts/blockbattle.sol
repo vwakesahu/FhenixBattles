@@ -25,12 +25,12 @@ contract BlockBattle {
     struct Asset {
         string name;
         string imageHash;
-        uint price;
-        uint strength;
-        uint armorPower;
-        uint rateOfFire;
-        uint range;
-        uint speed;
+        euint8 price;
+        euint8 strength;
+        euint8 armorPower;
+        euint8 rateOfFire;
+        euint8 range;
+        euint8 speed;
         AssetType assetType;
     }
 
