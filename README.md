@@ -1,6 +1,7 @@
 # FhenixBattle
 
-[![Project Demo](https://img.youtube.com/vi/hvfTCB2xZBA/0.jpg)](https://www.youtube.com/watch?v=hvfTCB2xZBA)
+[![Project Demo](https://img.youtube.com/vi/hvfTCB2xZBA/maxresdefault.jpg)](https://www.youtube.com/watch?v=hvfTCB2xZBA)
+
 Check out the project demo on YouTube.
 
 FhenixBattle is an exciting online multiplayer game where players from various regions can join, play, and compete for rewards in the form of NFTs. This game leverages the power of Fhenix, providing a dynamic and engaging gaming experience.
