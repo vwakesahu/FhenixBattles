@@ -235,7 +235,7 @@ contract BlockBattle {
         }
     }
 
-    /// @dev public function to generate random number; used for Battle Card Attack and Defense Strength
+    /// @dev public function to generate random number; used for Spawning
     function _createRandomNum() public returns (euint8) {
         euint8 randomNum = TFHE.randEuint8();
         return randomNum;
