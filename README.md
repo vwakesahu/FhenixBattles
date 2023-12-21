@@ -1,5 +1,5 @@
 # FhenixBattle
-![FhenixBattle](./public/fhenix_battle_banner.jpg)
+
 
 FhenixBattle is an exciting online multiplayer game where players from various regions can join, play, and compete for rewards in the form of NFTs. This game leverages the power of Fhenix, providing a dynamic and engaging gaming experience.
 
@@ -9,6 +9,22 @@ FhenixBattle is an exciting online multiplayer game where players from various r
 - **NFT Rewards:** Winners of FhenixBattles are rewarded with unique NFTs, adding a valuable incentive to the competitive gaming experience.
 
 ## Contract Functions
+
+### Asset Struct
+
+```solidity
+struct Asset {
+    string name;
+    string imageHash;
+    EncryptedInt price;
+    EncryptedInt strength;
+    EncryptedInt armorPower;
+    EncryptedInt rateOfFire;
+    EncryptedInt range;
+    EncryptedInt speed;
+    AssetType assetType;
+}
+```
 
 ### Random Character Spawn with TFHE
 TFHE is integrated to spawn characters at random locations on the map, enhancing the unpredictability and excitement of each game session.
